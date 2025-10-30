@@ -1,0 +1,4 @@
+project_id = "wpvzgwbmjxvtbbpcryvm"
+
+[functions.wallet-auth]
+verify_jwt = false
