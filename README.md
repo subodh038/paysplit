@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+💸 PaySplit — Decentralized Group Payments on Solana
 
-## Project info
+PaySplit is a decentralized app that lets friends, roommates, and communities easily split and settle shared expenses — for rent, food, movies, trips, or anything else.
+Built on Solana, PaySplit uses smart escrow contracts to handle funds securely and automatically release payments once everyone contributes their share.
 
-**URL**: https://lovable.dev/projects/98b837f9-3dfb-4a19-bd80-a412ea7a7de6
+🚀 Key Features
+👥 Create & Split Bills
 
-## How can I edit this code?
+Create a new split (e.g. Dinner, Rent, Movie Night)
 
-There are several ways of editing your application.
+Add participants and define each share
 
-**Use Lovable**
+💳 Pay Using Solana Wallet
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/98b837f9-3dfb-4a19-bd80-a412ea7a7de6) and start prompting.
+Connect your wallet (e.g. Phantom or Solflare)
 
-Changes made via Lovable will be committed automatically to this repo.
+Pay your share using SOL or USDC
 
-**Use your preferred IDE**
+Payments are handled directly on-chain
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔒 Automatic Escrow & Release
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Funds stay in escrow until all participants have paid
 
-Follow these steps:
+Once everyone completes payment, funds are automatically released to the owner’s wallet
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+No manual intervention or trust needed
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🧾 Transparent Payment History
 
-# Step 3: Install the necessary dependencies.
-npm i
+Every transaction and status update is recorded
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Users can view their completed, pending, or cancelled splits
 
-**Edit a file directly in GitHub**
+🛠️ Tech Stack
+Layer	Technology
+Blockchain	Solana (Web3.js / Solana Pay)
+Smart Contracts	Anchor Framework
+Frontend	React + TypeScript + TailwindCSS
+Database	Supabase (for off-chain mock data & history)
+Wallet Integration	Solana Wallet Adapter
+Notifications	Sonner (toast alerts)
+⚙️ MVP Workflow
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a Split → Add title, amount, and participant wallets.
 
-**Use GitHub Codespaces**
+Each Participant Pays → Payment status updates in real-time.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Automatic Fund Release → Once all shares are paid, funds are instantly sent to the landlord/owner.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/98b837f9-3dfb-4a19-bd80-a412ea7a7de6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+History Updates → Completed split appears in the user’s history dashboard.
